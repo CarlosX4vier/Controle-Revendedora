@@ -39,7 +39,7 @@ ipcMain.handle('mysql-reader', async (event, arg) => {
   var [rows, fields] = await connection.execute(arg[0], arg[1])
   console.log(rows)
   connection.close()
-  return [rows]
+  return rows
 })
 
 
