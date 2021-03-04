@@ -17,7 +17,11 @@ namespace ControleRevendaWF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home());
+            LoadingScreen loadingScreen = new LoadingScreen();
+            Application.Run(loadingScreen);
+            if (loadingScreen.isOpen)
+                Application.Run(new Home());
+
         }
     }
 }
