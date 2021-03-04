@@ -1,4 +1,5 @@
-﻿
+﻿using System.Collections.Generic;
+
 namespace ControleRevendaWF.Models
 {
     public class Revendedora
@@ -6,5 +7,6 @@ namespace ControleRevendaWF.Models
         public long Id;
         public string Nome;
         public string Sobrenome;
+        public List<Catalogo> Catalogos = new List<Catalogo>();
     }
 }
