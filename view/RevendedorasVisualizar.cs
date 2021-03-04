@@ -29,9 +29,17 @@ namespace ControleRevendaWF.view
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void editar_Click(object sender, EventArgs e)
         {
-
+            if (listView1.SelectedItems.Count == 0)  
+            {
+                MessageBox.Show("Selecione a revendedora antes de editar", "Atenção!");
+            }
+            else
+            {
+                long id = long.Parse(listView1.SelectedItems[0].Text);
+                new RevendedorasCadastrar(id).Show();
+            }
         }
     }
 }

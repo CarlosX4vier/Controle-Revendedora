@@ -93,8 +93,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\RevendedorasController.cs" />
+    <Compile Include="DAO\CatalogosDAO.cs" />
     <Compile Include="DAO\Conexao.cs" />
     <Compile Include="DAO\RevendedorasDAO.cs" />
+    <Compile Include="Models\Catalogo.cs" />
     <Compile Include="Models\Revendedora.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,6 +106,12 @@
     </Compile>
     <Compile Include="view\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="view\RevendedorasCadastrar.cs">
       <SubType>Form</SubType>
@@ -128,8 +137,12 @@
     <EmbeddedResource Include="view\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\RevendedorasCadastrar.resx">
       <DependentUpon>RevendedorasCadastrar.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="view\RevendedorasVisualizar.resx">
       <DependentUpon>RevendedorasVisualizar.cs</DependentUpon>
@@ -148,8 +161,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
