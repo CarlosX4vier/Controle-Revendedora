@@ -86,10 +86,11 @@ namespace ControleRevendaWF.DAO
             try
             {
                 Conexao conexao = new Conexao();
-                string sql = "UPDATE revendedora " +
+                string sql = "UPDATE revendedoras " +
                     "SET rev_nome = @nome, " +
-                    "rev_sobrneome = @sobrenome" +
+                    "rev_sobrenome = @sobrenome " +
                     "WHERE rev_id = @id ";
+
                 using (MySqlCommand command = conexao.GetConexao().CreateCommand())
                 {
                     command.CommandText = sql;
