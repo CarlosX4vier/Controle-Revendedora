@@ -22,11 +22,7 @@ namespace ControleRevendaWF.view
             {
                 gridCatalogos.Rows.Add(new object[] { item.Id, item.Nome, item.Porcentagem });
             }
-
-
         }
-
-
 
         public RevendedorasCadastrar(long id)
         {
@@ -49,9 +45,7 @@ namespace ControleRevendaWF.view
                 }
 
                 gridCatalogos.Rows.Add(new object[] { item.Id, item.Nome, valor });
-
             }
-
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -72,15 +66,27 @@ namespace ControleRevendaWF.view
 
                 revendedora.Catalogos.Add(catalogo);
             }
-            if (IdUser != 0)
+
+            try
             {
-                revendedora.Id = IdUser;
-                new RevendedorasController().Update(revendedora);
-               
+                if (IdUser != 0)
+                {
+                    revendedora.Id = IdUser;
+                    new RevendedorasController().Update(revendedora);
+                    MessageBox.Show("Atualizado com sucesso","Sucesso");
+
+                }
+                else
+                {
+                    new RevendedorasController().Insert(revendedora);
+                    MessageBox.Show("Cadastrado com sucesso", "Sucesso");
+
+                }
+                Close();
             }
-            else
+            catch(Exception er)
             {
-                new RevendedorasController().Insert(revendedora);
+                MessageBox.Show("Erro"+er.Message, "Erro");
             }
         }
     }
