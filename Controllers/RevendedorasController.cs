@@ -42,7 +42,9 @@ namespace ControleRevendaWF.Controllers
             try
             {
                 RevendedorasDAO revendedorasDAO = new RevendedorasDAO();
-                Revendedora revendedoraOld =Get(revendedora.Id);
+                Revendedora revendedoraOld = Get(revendedora.Id);
+
+                revendedorasDAO.Update(revendedora);
 
                 for (int i = 0; i < revendedora.Catalogos.Count; i++)
                 {
