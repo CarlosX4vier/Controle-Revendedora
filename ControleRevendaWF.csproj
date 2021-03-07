@@ -113,6 +113,12 @@
     <Compile Include="view\LoadingScreen.Designer.cs">
       <DependentUpon>LoadingScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\ProdutoVisualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ProdutoVisualizar.Designer.cs">
+      <DependentUpon>ProdutoVisualizar.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\RevendedorasCadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\LoadingScreen.resx">
       <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ProdutoVisualizar.resx">
+      <DependentUpon>ProdutoVisualizar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\RevendedorasCadastrar.resx">
       <DependentUpon>RevendedorasCadastrar.cs</DependentUpon>
