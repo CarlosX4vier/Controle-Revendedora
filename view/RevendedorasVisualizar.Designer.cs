@@ -52,10 +52,11 @@ namespace ControleRevendaWF.view
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 3);
+            this.listView1.Location = new System.Drawing.Point(20, 60);
+            this.listView1.Margin = new System.Windows.Forms.Padding(20);
             this.listView1.Name = "listView1";
             this.listView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.listView1.Size = new System.Drawing.Size(858, 438);
+            this.listView1.Size = new System.Drawing.Size(858, 364);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -79,12 +80,13 @@ namespace ControleRevendaWF.view
             this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.listView1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.listView1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(864, 484);
@@ -98,13 +100,13 @@ namespace ControleRevendaWF.view
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 447);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(858, 34);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(892, 34);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // btnEditar
             // 
             this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditar.Location = new System.Drawing.Point(780, 3);
+            this.btnEditar.Location = new System.Drawing.Point(814, 3);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
             this.btnEditar.TabIndex = 2;
@@ -113,7 +115,7 @@ namespace ControleRevendaWF.view
             // 
             // editar
             // 
-            this.editar.Location = new System.Drawing.Point(699, 3);
+            this.editar.Location = new System.Drawing.Point(733, 3);
             this.editar.Name = "editar";
             this.editar.Size = new System.Drawing.Size(75, 23);
             this.editar.TabIndex = 3;
